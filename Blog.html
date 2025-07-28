@@ -13,10 +13,10 @@
     </header>
 
     <nav>
-        <a href="ProyectoFinal.html">Quiénes Somos</a>
-        <a href="Nuestros Programas.html">Equipo</a>
-        <a href="Catálogo de Herramientas.html">Servicios</a>
-        <a href="Contáctenos.html">Contacto</a>
+        <a href="#quienessomos">Quiénes Somos</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
     </nav>
 
     <main class="contenedor-blog">
@@ -27,8 +27,7 @@
                     <h3>¿Cuándo es necesario reparar los inyectores diésel?</h3>
                     <p>Descubre las señales que indican que tus inyectores necesitan mantenimiento y evita daños mayores en tu motor.</p>
                     <a href="#" class="btn-leer" 
-                       data-titulo="¿Cuándo es necesario reparar los inyectores diésel?"
-                       data-contenido="Los inyectores diésel son componentes clave en la combustión de tu motor. Se recomienda revisarlos cada 20.000 km o si notas síntomas como humo negro excesivo por el escape, vibraciones inusuales en ralentí, una notable disminución en la potencia del motor, o un incremento significativo en el consumo de combustible. Una revisión y mantenimiento a tiempo en CEMECIN puede prevenir daños mayores y asegurar el óptimo funcionamiento de tu vehículo. ¡No esperes a que sea tarde!">
+                       data-contenido="Los inyectores diésel son componentes clave. Se recomienda revisarlos cada 20.000 km o si notas humo negro, vibraciones en ralentí o aumento en el consumo de combustible.">
                        Leer más
                     </a>
                 </div>
@@ -39,8 +38,7 @@
                     <h3>Mantenimiento preventivo de bombas diésel</h3>
                     <p>Un buen mantenimiento puede prolongar la vida útil de tu bomba y mejorar el rendimiento del motor.</p>
                     <a href="#" class="btn-leer"
-                       data-titulo="Mantenimiento preventivo de bombas diésel"
-                       data-contenido="El mantenimiento preventivo de las bombas diésel incluye la revisión periódica de sellos, la limpieza de filtros de combustible, y la calibración adecuada del sistema. Realizar estas acciones de manera regular prolonga significativamente la vida útil de la bomba, optimiza el consumo de combustible y previene averías costosas que pueden detener tu operación. En CEMECIN, ofrecemos un servicio de mantenimiento exhaustivo para asegurar el rendimiento óptimo de tu equipo.">
+                       data-contenido="El mantenimiento preventivo incluye revisión de sellos, limpieza de filtros y calibración. Esto prolonga la vida útil y evita averías costosas.">
                        Leer más
                     </a>
                 </div>
@@ -49,3 +47,26 @@
             <article class="entrada">
                 <div class="contenido">
                     <h3>Consejos para ahorrar combustible en motores diésel</h3>
+                    <p>Pequeños cambios en tu conducción pueden marcar la diferencia en el consumo de diésel.</p>
+                    <a href="#" class="btn-leer"
+                       data-contenido="Mantener la presión correcta de los neumáticos y evitar aceleraciones bruscas son claves para ahorrar combustible en motores diésel.">
+                       Leer más
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <button id="ver-mas" class="btn-ver-mas">Ver más</button>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-texto"></p>
+        </div>
+    </div>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>
