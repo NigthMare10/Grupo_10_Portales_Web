@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #90caf9 0%, #fff 100%);
+  min-height: 100vh;
+  color: #222;
+  line-height: 1.7;
+}
+
+.cotizaciones-container {
+  max-width: 600px;
+  margin: 48px auto;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(144, 202, 249, 0.10);
+  padding: 36px 28px;
+}
+
+h1 {
+  background: #fff;
+  color: #1565c0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #90caf9;
+  padding: 18px 0 12px 0;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(144, 202, 249, 0.10);
+  max-width: 480px;
+  margin: 0 auto 32px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  color: #1565c0;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #90caf9;
+  font-size: 1rem;
+  background: #eaf4fb;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #1565c0;
+  outline: none;
+  background: #fff;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  background: #eaf4fb;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1.5px solid #90caf9;
+  margin-bottom: 4px;
+}
+
+.producto input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+button {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #222;
+}
+
+#resultado {
+  background: #fff;
+  border: 1.5px solid #90caf9;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+  white-space: pre-line;
+  font-family: monospace;
+}
+
+@media (max-width: 700px) {
+  .cotizaciones-container {
+    padding: 12px 2vw;
+    max-width: 98vw;
+  }
+  h1 {
+    font-size: 1.2rem;
+    padding: 10px 0 8px 0;
+    max-width: 98vw;
+  }
+  button {
+    padding: 10px 12px;
+    font-size: 1rem;
+  }
+}

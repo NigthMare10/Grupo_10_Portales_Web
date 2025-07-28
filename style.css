@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'madetommy';
+  src: url('madetommy_bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'madetommy';
+  src: url('madetommy_medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'madetommy', sans-serif;
+  margin: 0;
+  background-color: #cce7ff; 
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #004a99; 
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.branding {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-izq {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'madetommy', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  background-color: #004a99;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 2em auto 4em auto;
+  padding: 0 20px;
+}
+
+.faq-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.faq-item h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  color: #666;
+}

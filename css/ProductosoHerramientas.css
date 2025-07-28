@@ -1,0 +1,95 @@
+/* Archivo: css/productos-herramientas.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0c56ac;
+  color: white;
+}
+
+h1, h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.catalogo-container {
+  margin-bottom: 30px;
+  /* Si necesitas estilos para esta sección, puedes agregarlos */
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* espacio entre columnas */
+  flex-wrap: wrap;
+}
+
+/* Columnas */
+.columna {
+  flex: 1 1 45%; /* toma 45% ancho, ajusta para 2 columnas */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cada cuadro / contenedor de presentación */
+.presentacion {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.presentacion .contenedor-imagen {
+  width: 100%;
+  max-height: 180px; /* limita la altura */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.informacion p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Estilos para el video centrado */
+video {
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive: en pantallas más pequeñas, las columnas serán una debajo de otra */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column;
+  }
+  
+  .columna {
+    flex: 1 1 100%;
+  }
+}

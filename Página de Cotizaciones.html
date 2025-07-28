@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generar Cotización</title>
+  <link rel="stylesheet" href="css/PaginaCotizaciones.css">
+</head>
+<body>
+
+  <div class="cotizaciones-container">
+    <h1>Cotización - Laboratorio Diesel CEMECIN</h1>
+
+    <form id="formCotizacion">
+      <label for="cliente">Nombre del Cliente:</label>
+      <input type="text" id="cliente" required>
+
+      <label>Selecciona productos:</label>
+      <div><input type="checkbox" value="5800" data-nombre="Reparar Inyector"> Reparar Inyector (Lps. 5800)</div>
+      <div><input type="checkbox" value="2800" data-nombre="Solenoide"> Solenoide (Lps. 2800)</div>
+      <div><input type="checkbox" value="200" data-nombre="Líquido de Calibración"> Líquido de Calibración (Lps. 200)</div>
+      <div><input type="checkbox" value="100" data-nombre="Arandela"> Arandela (Lps. 100)</div>
+
+      <button type="button" onclick="generarCotizacion()">Generar Cotización</button>
+      <button type="button" onclick="descargarCotizacion()">Descargar TXT</button>
+    </form>
+
+    <div id="resultado" class="success"></div>
+  </div>
+
+  <script src="js/cotizacion.js"></script>
+</body>
+</html>
